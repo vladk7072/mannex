@@ -25,17 +25,17 @@
                 </a>
               </li>
               <li class="header__item">
-                <a class="header__link header__link--active" href="#">
+                <a class="header__link" href="request.html">
                   Pro-Запрос
                 </a>
               </li>
               <li class="header__item">
-                <a class="header__link" href="garag-list.html">
+                <a class="header__link" href="garag-into.html">
                   Гараж
                 </a>
               </li>
               <li class="header__item">
-                <a class="header__link" href="contacts.html">
+                <a class="header__link header__link--active" href="#">
                   Контакты
                 </a>
               </li>
@@ -48,7 +48,7 @@
           </nav>
           <div class="header__box">
             <a class="header__basket header__basket--availability" href="basket.html">100000р.</a>
-            <button class="header__button">root</button>
+            <button class="header__button" onclick="location.href='order-into.html'">Войти</button>
           </div>
         </div>
         <form class="header__search" action="#">
@@ -60,38 +60,30 @@
 
     <main class="main">
 
-
-
-
-
-      <section class="request">
+      <section class="contacts">
         <div class="container">
-          <h2 class="request__title title-2">Запрос продавцу</h2>
-          <form class="request__form" action="#">
-            <h6 class="request__subtitle">Ваши данные</h6>
-            <div class="request__box-1">
-              <input class="request__input" type="text" placeholder="Фамилия Имя Отчество">
-              <input class="request__input" type="text" placeholder="Ваш город">
-              <input class="request__input" type="text" placeholder="Ваш телефон">
+          <h2 class="contacts__title title">Контакты</h2>
+          <div class="contacts__items">
+            <div class="contacts__item">
+              <h6 class="contacts__item-title">
+                Центральный офис г. Екатеринбург ул. Бисертская 29
+              </h6>
+              <a class="contacts__item-tel" href="tel:89122945345">
+                8 912 294 5345
+              </a>
             </div>
-            <h6 class="request__subtitle">Об иномарке</h6>
-            <div class="request__box-2">
-              <input class="request__input" type="text" placeholder="Марка">
-              <input class="request__input" type="text" placeholder="Модель">
-              <input class="request__input" type="text" placeholder="Год выпуска">
-              <input class="request__input" type="text" placeholder="Объём двигателя">
-              <input class="request__input" type="text" placeholder="*VIN/FRAME-код**	">
-              <input class="request__input" type="text" placeholder="Тип КПП">
-              <input class="request__input" type="text" placeholder="Тип кузова/число дверей">
-              <input class="request__input" type="text" placeholder="Привод">
+            <div class="contacts__item">
+              <h6 class="contacts__item-title">
+                Доп. офис г. Екатеринбург ул. Папанина 9
+              </h6>
+              <a class="contacts__item-tel" href="tel:89002038083">
+                8 900 203 8083
+              </a>
             </div>
-            <div class="request__box-3">
-              <h6 class="request__subtitle">Необходимые запчасти</h6>
-              <input class="request__input" type="text" placeholder="Напишите какие детали вас инетерсуют">
+            <div class="contacts__item">
+              <a class="contacts__item-email" href="mailto:info-autoheads@mail.ru">info-autoheads@mail.ru</a>
             </div>
-            <input class="request__btn" placeholder="Оставить заявку" type="submit">
-          </form>
-          <p class="request__safe">Нажимая кнопку “Оставить заявку” вы примимаете нашу <a class="request__safe-link" href="#">политику конфиденциальности</a></p>
+          </div>
         </div>
       </section>
 
@@ -123,10 +115,10 @@
                 <a class="footer__link" href="garag-into.html">Гараж</a>
               </li>
               <li class="footer__list-item">
-                <a class="footer__link" href="contacts.html">Контакты</a>
+                <a class="footer__link" href="#">Контакты</a>
               </li>
               <li class="footer__list-item">
-                <a class="footer__link" href="order.html">Заказы</a>
+                <a class="footer__link" href="order-into.html">Заказы</a>
               </li>
             </ul>
           </div>
@@ -134,7 +126,7 @@
             <h6 class="footer__title">Аккаунт</h6>
             <ul class="footer__list">
               <li class="footer__list-item">
-                <a class="footer__link" href="basket-empty.html">Корзина</a>
+                <a class="footer__link" href="basket.html">Корзина</a>
               </li>
               <li class="footer__list-item">
                 <a class="footer__link" href="balance.html">Баланс</a>

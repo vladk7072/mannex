@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <a class="header__logo-link" href="index.html">
+            <img src="images/header/logo.png" alt="логотип">
+          </a>
+          <nav class="header__menu">
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__link" href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="request.html">
+                  Pro-Запрос
+                </a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="garag-list.html">
+                  Гараж
+                </a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="contacts.html">
+                  Контакты
+                </a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="order.html">
+                  Заказы
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__box">
+            <a class="header__basket header__basket--availability" href="basket.html">100000р.</a>
+            <button class="header__button">root</button>
+          </div>
+        </div>
+        <form class="header__search" action="#">
+          <input class="header__search-text" type="text" placeholder="Поиск по артикулу">
+          <button class="header__search-btn">Поиск</button>
+        </form>
+      </div>
+    </header>
+
+    <main class="main">
+
+      <section class="basket">
+        <div class="container">
+          <h2 class="basket__title title-2">Корзина</h2>
+          <div class="basket__list">
+            <div class="category__item">
+              <img class="category__item-img" src="images/category/1.jpg" alt="">
+              <h6 class="category__item-title">Michelin</h6>
+              <p class="category__item-text">Шина летняя "Primacy 3 GRNX 205/55R16 91V"<p>
+                  <div class="category__item-footer">
+                    <p class="category__item-price">990грн</p>
+                    <div class="category__item-counter">
+                      <button class="category__item-minus" type="button"
+                        onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"></button>
+                      <input class="category__item-total" type="number" min="1" max="99" value="1" readonly>
+                      <button class="category__item-plus" type="button"
+                        onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"></button>
+                    </div>
+                    <div class="category__item-basket">
+                      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_9_154)">
+                          <path
+                            d="M8.25228 16.1623H21.0438C21.3606 16.1623 21.6384 15.9456 21.7242 15.6309L24.5564 5.37682C24.6172 5.15576 24.5755 4.91829 24.4415 4.73461C24.3073 4.55151 24.0986 4.44336 23.8758 4.44336H6.61778L6.11166 2.0874C6.03975 1.7519 5.75213 1.51367 5.42025 1.51367H1.125C0.733752 1.51367 0.416992 1.84135 0.416992 2.24609C0.416992 2.65102 0.733752 2.97852 1.125 2.97852H4.852L7.40875 14.8804C6.6565 15.2187 6.12825 15.9933 6.12825 16.8947C6.12825 18.1063 7.08112 19.092 8.25228 19.092H21.0438C21.4352 19.092 21.7518 18.7645 21.7518 18.3596C21.7518 17.9548 21.4352 17.6271 21.0438 17.6271H8.25228C7.86232 17.6271 7.54427 17.2989 7.54427 16.8947C7.54427 16.4906 7.86232 16.1623 8.25228 16.1623Z"
+                            fill="#4BA9FF" />
+                          <path
+                            d="M7.54419 21.2893C7.54419 22.501 8.49705 23.4866 9.6684 23.4866C10.8396 23.4866 11.7924 22.501 11.7924 21.2893C11.7924 20.0778 10.8396 19.092 9.6684 19.092C8.49705 19.092 7.54419 20.0778 7.54419 21.2893Z"
+                            fill="#4BA9FF" />
+                          <path
+                            d="M17.5037 21.2893C17.5037 22.501 18.4565 23.4866 19.6277 23.4866C20.799 23.4866 21.7517 22.501 21.7517 21.2893C21.7517 20.0778 20.799 19.092 19.6277 19.092C18.4565 19.092 17.5037 20.0778 17.5037 21.2893Z"
+                            fill="#4BA9FF" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_9_154">
+                            <rect width="24.1667" height="25" fill="white" transform="translate(0.416992)" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+                  </div>
+            </div>
+            <div class="category__item">
+              <img class="category__item-img" src="images/category/1.jpg" alt="">
+              <h6 class="category__item-title">Michelin</h6>
+              <p class="category__item-text">Шина летняя "Primacy 3 GRNX 205/55R16 91V"<p>
+                  <div class="category__item-footer">
+                    <p class="category__item-price">990грн</p>
+                    <div class="category__item-counter">
+                      <button class="category__item-minus" type="button"
+                        onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"></button>
+                      <input class="category__item-total" type="number" min="1" max="99" value="1" readonly>
+                      <button class="category__item-plus" type="button"
+                        onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"></button>
+                    </div>
+                    <div class="category__item-basket">
+                      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_9_154)">
+                          <path
+                            d="M8.25228 16.1623H21.0438C21.3606 16.1623 21.6384 15.9456 21.7242 15.6309L24.5564 5.37682C24.6172 5.15576 24.5755 4.91829 24.4415 4.73461C24.3073 4.55151 24.0986 4.44336 23.8758 4.44336H6.61778L6.11166 2.0874C6.03975 1.7519 5.75213 1.51367 5.42025 1.51367H1.125C0.733752 1.51367 0.416992 1.84135 0.416992 2.24609C0.416992 2.65102 0.733752 2.97852 1.125 2.97852H4.852L7.40875 14.8804C6.6565 15.2187 6.12825 15.9933 6.12825 16.8947C6.12825 18.1063 7.08112 19.092 8.25228 19.092H21.0438C21.4352 19.092 21.7518 18.7645 21.7518 18.3596C21.7518 17.9548 21.4352 17.6271 21.0438 17.6271H8.25228C7.86232 17.6271 7.54427 17.2989 7.54427 16.8947C7.54427 16.4906 7.86232 16.1623 8.25228 16.1623Z"
+                            fill="#4BA9FF" />
+                          <path
+                            d="M7.54419 21.2893C7.54419 22.501 8.49705 23.4866 9.6684 23.4866C10.8396 23.4866 11.7924 22.501 11.7924 21.2893C11.7924 20.0778 10.8396 19.092 9.6684 19.092C8.49705 19.092 7.54419 20.0778 7.54419 21.2893Z"
+                            fill="#4BA9FF" />
+                          <path
+                            d="M17.5037 21.2893C17.5037 22.501 18.4565 23.4866 19.6277 23.4866C20.799 23.4866 21.7517 22.501 21.7517 21.2893C21.7517 20.0778 20.799 19.092 19.6277 19.092C18.4565 19.092 17.5037 20.0778 17.5037 21.2893Z"
+                            fill="#4BA9FF" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_9_154">
+                            <rect width="24.1667" height="25" fill="white" transform="translate(0.416992)" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+                  </div>
+            </div>
+            <div class="category__item">
+              <img class="category__item-img" src="images/category/1.jpg" alt="">
+              <h6 class="category__item-title">Michelin</h6>
+              <p class="category__item-text">Шина летняя "Primacy 3 GRNX 205/55R16 91V"<p>
+                  <div class="category__item-footer">
+                    <p class="category__item-price">990грн</p>
+                    <div class="category__item-counter">
+                      <button class="category__item-minus" type="button"
+                        onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"></button>
+                      <input class="category__item-total" type="number" min="1" max="99" value="1" readonly>
+                      <button class="category__item-plus" type="button"
+                        onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"></button>
+                    </div>
+                    <div class="category__item-basket">
+                      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_9_154)">
+                          <path
+                            d="M8.25228 16.1623H21.0438C21.3606 16.1623 21.6384 15.9456 21.7242 15.6309L24.5564 5.37682C24.6172 5.15576 24.5755 4.91829 24.4415 4.73461C24.3073 4.55151 24.0986 4.44336 23.8758 4.44336H6.61778L6.11166 2.0874C6.03975 1.7519 5.75213 1.51367 5.42025 1.51367H1.125C0.733752 1.51367 0.416992 1.84135 0.416992 2.24609C0.416992 2.65102 0.733752 2.97852 1.125 2.97852H4.852L7.40875 14.8804C6.6565 15.2187 6.12825 15.9933 6.12825 16.8947C6.12825 18.1063 7.08112 19.092 8.25228 19.092H21.0438C21.4352 19.092 21.7518 18.7645 21.7518 18.3596C21.7518 17.9548 21.4352 17.6271 21.0438 17.6271H8.25228C7.86232 17.6271 7.54427 17.2989 7.54427 16.8947C7.54427 16.4906 7.86232 16.1623 8.25228 16.1623Z"
+                            fill="#4BA9FF" />
+                          <path
+                            d="M7.54419 21.2893C7.54419 22.501 8.49705 23.4866 9.6684 23.4866C10.8396 23.4866 11.7924 22.501 11.7924 21.2893C11.7924 20.0778 10.8396 19.092 9.6684 19.092C8.49705 19.092 7.54419 20.0778 7.54419 21.2893Z"
+                            fill="#4BA9FF" />
+                          <path
+                            d="M17.5037 21.2893C17.5037 22.501 18.4565 23.4866 19.6277 23.4866C20.799 23.4866 21.7517 22.501 21.7517 21.2893C21.7517 20.0778 20.799 19.092 19.6277 19.092C18.4565 19.092 17.5037 20.0778 17.5037 21.2893Z"
+                            fill="#4BA9FF" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_9_154">
+                            <rect width="24.1667" height="25" fill="white" transform="translate(0.416992)" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+                  </div>
+            </div>
+          </div>
+          <div class="category__pagination">
+            <a class="category__pagination-link category__pagination-link--active" href="#">1</a>
+            <a class="category__pagination-link" href="#">2</a>
+            <a class="category__pagination-link" href="#">3</a>
+            <a class="category__pagination-link" href="#">...</a>
+            <a class="category__pagination-link" href="#">15</a>
+          </div>
+          <p class="basket__all-price"><span>Итог:</span> 100 000р.</p>
+          <input class="basket__btn" type="button" value="Оплатить">
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__item">
+            <a class="footer__logo-link" href="#">
+              <img src="images/header/logo.png" alt="logo">
+            </a>
+            <p class="footer__copy">2020 © Mannex Все права защищены</p>
+            <a class="footer__link" href="#">Публичная оферта</a>
+          </div>
+          <div class="footer__item">
+            <h6 class="footer__title">Основное</h6>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__link" href="index.html">Главная</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="index.html">О компании</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="request.html">Pro-Запрос</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="garag-into.html">Гараж</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="contacts.html">Контакты</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="order-into.html">Заказы</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h6 class="footer__title">Аккаунт</h6>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__link" href="#">Корзина</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="balance.html">Баланс</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="order.html">Мои заказы</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="request.html">Запрос продавцу </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="garag-list.html">Cравнение</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h6 class="footer__title">Контакты</h6>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__link footer__link-mail" href="mailto:vladk7072@gmail.com">vladk7072@gmail.com
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link footer__link-tel" href="tel:0970123456">
+                  097 012 34 56
+                </a>
+                <a class="footer__link footer__link-tel" href="tel:0970123456">
+                  097 012 34 56
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

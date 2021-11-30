@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mannex</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 
   <div class="wrapper">
-    <header class="header">
+    <header class="header" id="index">
       <div class="container">
         <div class="header__wrapper">
           <a class="header__logo-link" href="#">
-            <img src="images/header/logo.png" alt="">
+            <img src="images/header/logo.png" alt="логотип">
           </a>
           <nav class="header__menu">
             <ul class="header__list">
@@ -30,25 +31,25 @@
                 </a>
               </li>
               <li class="header__item">
-                <a class="header__link" href="#">
+                <a class="header__link" href="garag-into.html">
                   Гараж
                 </a>
               </li>
               <li class="header__item">
-                <a class="header__link" href="#">
+                <a class="header__link" href="contacts.html">
                   Контакты
                 </a>
               </li>
               <li class="header__item">
-                <a class="header__link" href="#">
+                <a class="header__link" href="order-into.html">
                   Заказы
                 </a>
               </li>
             </ul>
           </nav>
           <div class="header__box">
-            <a class="header__basket header__basket--availability" href="#">100000р.</a>
-            <button class="header__button">Войти</button>
+            <a class="header__basket header__basket--availability" href="basket.html">100000р.</a>
+            <button class="header__button" onclick="location.href='order-into.html'">Войти</button>
           </div>
         </div>
         <form class="header__search" action="#">
@@ -117,7 +118,7 @@
         </div>
       </section>
 
-      <section class="about">
+      <section class="about" id="about">
         <div class="container">
           <h2 class="about__title title">О компании</h2>
           <h2 class="about__title-bg title-bg"></h2>
@@ -196,16 +197,8 @@
                 <option class="category__aside-option">17</option>
                 <option class="category__aside-option">18</option>
               </select>
-
-
-              <button class="category__aside-btn" type="submit">Подобрать</button>
+              <button class="category__aside-btn button" type="submit">Подобрать</button>
             </aside>
-
-
-
-
-
-
 
             <div class="category__items-box">
               <div class="category__items">
@@ -214,7 +207,7 @@
                   <h6 class="category__item-title">Michelin</h6>
                   <p class="category__item-text">Шина летняя "Primacy 3 GRNX 205/55R16 91V"<p>
                       <div class="category__item-footer">
-                        <p class="category__item-price">990p.</p>
+                        <p class="category__item-price">990грн.</p>
                         <div class="category__item-counter">
                           <button class="category__item-minus" type="button"
                             onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"></button>
@@ -250,7 +243,7 @@
                   <h6 class="category__item-title">Michelin</h6>
                   <p class="category__item-text">Шина летняя "Primacy 3 GRNX 205/55R16 91V"<p>
                       <div class="category__item-footer">
-                        <p class="category__item-price">990p.</p>
+                        <p class="category__item-price">990грн</p>
                         <div class="category__item-counter">
                           <button class="category__item-minus" type="button"
                             onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"></button>
@@ -286,7 +279,7 @@
                   <h6 class="category__item-title">Michelin</h6>
                   <p class="category__item-text">Шина летняя "Primacy 3 GRNX 205/55R16 91V"<p>
                       <div class="category__item-footer">
-                        <p class="category__item-price">990p.</p>
+                        <p class="category__item-price">990грн</p>
                         <div class="category__item-counter">
                           <button class="category__item-minus" type="button"
                             onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"></button>
@@ -322,7 +315,7 @@
                   <h6 class="category__item-title">Michelin</h6>
                   <p class="category__item-text">Шина летняя "Primacy 3 GRNX 205/55R16 91V"<p>
                       <div class="category__item-footer">
-                        <p class="category__item-price">990p.</p>
+                        <p class="category__item-price">990грн</p>
                         <div class="category__item-counter">
                           <button class="category__item-minus" type="button"
                             onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"></button>
@@ -358,7 +351,7 @@
                   <h6 class="category__item-title">Michelin</h6>
                   <p class="category__item-text">Шина летняя "Primacy 3 GRNX 205/55R16 91V"<p>
                       <div class="category__item-footer">
-                        <p class="category__item-price">990p.</p>
+                        <p class="category__item-price">990грн</p>
                         <div class="category__item-counter">
                           <button class="category__item-minus" type="button"
                             onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"></button>
@@ -394,7 +387,7 @@
                   <h6 class="category__item-title">Michelin</h6>
                   <p class="category__item-text">Шина летняя "Primacy 3 GRNX 205/55R16 91V"<p>
                       <div class="category__item-footer">
-                        <p class="category__item-price">990p.</p>
+                        <p class="category__item-price">990грн</p>
                         <div class="category__item-counter">
                           <button class="category__item-minus" type="button"
                             onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"></button>
@@ -430,7 +423,7 @@
                   <h6 class="category__item-title">Michelin</h6>
                   <p class="category__item-text">Шина летняя "Primacy 3 GRNX 205/55R16 91V"<p>
                       <div class="category__item-footer">
-                        <p class="category__item-price">990p.</p>
+                        <p class="category__item-price">990грн</p>
                         <div class="category__item-counter">
                           <button class="category__item-minus" type="button"
                             onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"></button>
@@ -466,7 +459,7 @@
                   <h6 class="category__item-title">Michelin</h6>
                   <p class="category__item-text">Шина летняя "Primacy 3 GRNX 205/55R16 91V"<p>
                       <div class="category__item-footer">
-                        <p class="category__item-price">990p.</p>
+                        <p class="category__item-price">990грн</p>
                         <div class="category__item-counter">
                           <button class="category__item-minus" type="button"
                             onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"></button>
@@ -502,7 +495,7 @@
                   <h6 class="category__item-title">Michelin</h6>
                   <p class="category__item-text">Шина летняя "Primacy 3 GRNX 205/55R16 91V"<p>
                       <div class="category__item-footer">
-                        <p class="category__item-price">990p.</p>
+                        <p class="category__item-price">990грн</p>
                         <div class="category__item-counter">
                           <button class="category__item-minus" type="button"
                             onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"></button>
@@ -562,22 +555,22 @@
             <h6 class="footer__title">Основное</h6>
             <ul class="footer__list">
               <li class="footer__list-item">
-                <a class="footer__link" href="#">Главная</a>
+                <a class="footer__link scrollto" href="#index">Главная</a>
               </li>
               <li class="footer__list-item">
-                <a class="footer__link" href="#">О компании</a>
+                <a class="footer__link scrollto" href="#about">О компании</a>
               </li>
               <li class="footer__list-item">
                 <a class="footer__link" href="request.html">Pro-Запрос</a>
               </li>
               <li class="footer__list-item">
-                <a class="footer__link" href="#">Гараж</a>
+                <a class="footer__link" href="garag-into.html">Гараж</a>
               </li>
               <li class="footer__list-item">
-                <a class="footer__link" href="#">Контакты</a>
+                <a class="footer__link" href="contacts.html">Контакты</a>
               </li>
               <li class="footer__list-item">
-                <a class="footer__link" href="#">Заказы</a>
+                <a class="footer__link" href="order-into.html">Заказы</a>
               </li>
             </ul>
           </div>
@@ -585,19 +578,19 @@
             <h6 class="footer__title">Аккаунт</h6>
             <ul class="footer__list">
               <li class="footer__list-item">
-                <a class="footer__link" href="#">Корзина</a>
+                <a class="footer__link" href="basket.html">Корзина</a>
               </li>
               <li class="footer__list-item">
-                <a class="footer__link" href="#">Баланс</a>
+                <a class="footer__link" href="balance.html">Баланс</a>
               </li>
               <li class="footer__list-item">
-                <a class="footer__link" href="#">Мои заказы</a>
+                <a class="footer__link" href="order.html">Мои заказы</a>
               </li>
               <li class="footer__list-item">
-                <a class="footer__link" href="#">Запрос продавцу </a>
+                <a class="footer__link" href="request.html">Запрос продавцу </a>
               </li>
               <li class="footer__list-item">
-                <a class="footer__link" href="#">Cравнение</a>
+                <a class="footer__link" href="garag-list.html">Cравнение</a>
               </li>
             </ul>
           </div>
@@ -610,10 +603,10 @@
               </li>
               <li class="footer__list-item">
                 <a class="footer__link footer__link-tel" href="tel:89002038083">
-                  8 900 203 8083
+                  097 012 34 56
                 </a>
                 <a class="footer__link footer__link-tel" href="tel:89122945345">
-                  8 912 294 5345
+                  097 012 34 56
                 </a>
               </li>
             </ul>
@@ -623,6 +616,7 @@
     </footer>
   </div>
 
+  <script src="js/wow.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 

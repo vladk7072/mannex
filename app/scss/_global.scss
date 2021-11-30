@@ -18,6 +18,7 @@ body {
 .title {
   font-size: 64px;
   line-height: 77px;
+  margin-bottom: 50px;
   @extend %gil-700;
   color: $grey;
 }
@@ -41,41 +42,45 @@ body {
   @extend %gil-700;
   margin-top: -155px;
 }
-
-// .number {
-// 	display: inline-block;
-// 	position: relative;
-// 	width: 100px;
-// }
-// .number input[type="number"] {
-// 	display: block;
-// 	height: 32px;
-// 	line-height: 32px;
-// 	width: 100%;
-// 	padding: 0;
-// 	margin: 0;
-// 	box-sizing: border-box;
-// 	text-align: center;
-// 	-moz-appearance: textfield;
-// 	-webkit-appearance: textfield;
-// 	appearance: textfield;
-// }
-// .number input[type="number"]::-webkit-outer-spin-button,
-// .number input[type="number"]::-webkit-inner-spin-button {
-// 	display: none;
-// }
-// .number-minus,
-// .number-plus {
-// 	position: absolute;
-// 	top: 1px;
-// 	left: 1px;
-// 	bottom: 1px;
-// 	width: 20px;
-// 	padding: 0;
-// 	display: block;
-// 	text-align: center;
-// 	border: none;
-// 	border-right: 1px solid #ddd;
-// 	font-size: 16px;
-// 	font-weight: 600;
-// }
+.button{
+  background-color: $accent;
+  color: #fff;
+  border: none;
+  padding: 20px 10px;
+  max-width: 265px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 24px;
+  @extend %gil-700;
+  color: #fff;
+  cursor: pointer;
+}
+.button-garag{
+  max-width: 420px;
+  width: 100%;
+  background: linear-gradient(180deg, #FF5454 0%, #CD4848 100%);
+  box-shadow: 0px 20px 50px rgba(255, 129, 129, 0.3);
+  padding: 35px 10px;
+  font-size: 24px;
+  line-height: 29px;
+  @extend %gil-700;
+  border: none;
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    background-image: url('../images/button-garag-decor.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 195px;
+    height: 114px;
+    left: -100px;
+    bottom: -40px;
+  }
+}

@@ -25,12 +25,12 @@
                 </a>
               </li>
               <li class="header__item">
-                <a class="header__link header__link--active" href="#">
+                <a class="header__link" href="request.html">
                   Pro-Запрос
                 </a>
               </li>
               <li class="header__item">
-                <a class="header__link" href="garag-list.html">
+                <a class="header__link" href="garag-into.html">
                   Гараж
                 </a>
               </li>
@@ -40,7 +40,7 @@
                 </a>
               </li>
               <li class="header__item">
-                <a class="header__link" href="order.html">
+                <a class="header__link" href="#">
                   Заказы
                 </a>
               </li>
@@ -48,7 +48,7 @@
           </nav>
           <div class="header__box">
             <a class="header__basket header__basket--availability" href="basket.html">100000р.</a>
-            <button class="header__button">root</button>
+            <button class="header__button" onclick="location.href='order-into.html'">Войти</button>
           </div>
         </div>
         <form class="header__search" action="#">
@@ -60,38 +60,25 @@
 
     <main class="main">
 
-
-
-
-
-      <section class="request">
+      <section class="login">
         <div class="container">
-          <h2 class="request__title title-2">Запрос продавцу</h2>
-          <form class="request__form" action="#">
-            <h6 class="request__subtitle">Ваши данные</h6>
-            <div class="request__box-1">
-              <input class="request__input" type="text" placeholder="Фамилия Имя Отчество">
-              <input class="request__input" type="text" placeholder="Ваш город">
-              <input class="request__input" type="text" placeholder="Ваш телефон">
-            </div>
-            <h6 class="request__subtitle">Об иномарке</h6>
-            <div class="request__box-2">
-              <input class="request__input" type="text" placeholder="Марка">
-              <input class="request__input" type="text" placeholder="Модель">
-              <input class="request__input" type="text" placeholder="Год выпуска">
-              <input class="request__input" type="text" placeholder="Объём двигателя">
-              <input class="request__input" type="text" placeholder="*VIN/FRAME-код**	">
-              <input class="request__input" type="text" placeholder="Тип КПП">
-              <input class="request__input" type="text" placeholder="Тип кузова/число дверей">
-              <input class="request__input" type="text" placeholder="Привод">
-            </div>
-            <div class="request__box-3">
-              <h6 class="request__subtitle">Необходимые запчасти</h6>
-              <input class="request__input" type="text" placeholder="Напишите какие детали вас инетерсуют">
-            </div>
-            <input class="request__btn" placeholder="Оставить заявку" type="submit">
+          <h2 class="login__title title">
+            Страница авторизации в личный кабинет
+          </h2>
+          <p class="login__text">
+            Доступ на страницу заказов доступен только для зарегистрированных пользователей
+          </p>
+          <form class="login__form" action="#">
+            <input class="login__input" type="email" placeholder="E-mail">
+            <input class="login__input" type="password" placeholder="Пароль">
+            <input class="login__button button" type="button" value="Войти" onclick="location.href='order.html'">
           </form>
-          <p class="request__safe">Нажимая кнопку “Оставить заявку” вы примимаете нашу <a class="request__safe-link" href="#">политику конфиденциальности</a></p>
+          <p class="login__register">
+            Ещё не зарегистрированы?
+          </p>
+          <a class="login__register-link" href="reg-log.html">
+            Зарегистрироваться
+          </a>
         </div>
       </section>
 
@@ -126,7 +113,7 @@
                 <a class="footer__link" href="contacts.html">Контакты</a>
               </li>
               <li class="footer__list-item">
-                <a class="footer__link" href="order.html">Заказы</a>
+                <a class="footer__link" href="#">Заказы</a>
               </li>
             </ul>
           </div>
@@ -134,7 +121,7 @@
             <h6 class="footer__title">Аккаунт</h6>
             <ul class="footer__list">
               <li class="footer__list-item">
-                <a class="footer__link" href="basket-empty.html">Корзина</a>
+                <a class="footer__link" href="basket.html">Корзина</a>
               </li>
               <li class="footer__list-item">
                 <a class="footer__link" href="balance.html">Баланс</a>

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <a class="header__logo-link" href="index.html">
+            <img src="images/header/logo.png" alt="логотип">
+          </a>
+          <nav class="header__menu">
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__link" href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="request.html">
+                  Pro-Запрос
+                </a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="garag-list.html">
+                  Гараж
+                </a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="contacts.html">
+                  Контакты
+                </a>
+              </li>
+              <li class="header__item">
+                <a class="header__link header__link--active" href="order.html">
+                  Заказы
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__box">
+            <a class="header__basket header__basket--availability" href="basket.html">100000р.</a>
+            <button class="header__button">root</button>
+          </div>
+        </div>
+        <form class="header__search" action="#">
+          <input class="header__search-text" type="text" placeholder="Поиск по артикулу">
+          <button class="header__search-btn">Поиск</button>
+        </form>
+      </div>
+    </header>
+
+    <main class="main">
+
+      <section class="order">
+        <div class="container">
+          <h2 class="order__title title">Заказы</h2>
+          <div class="order__wrapper">
+            <div class="order__bar">
+              <div class="order__bar-item">
+                <p class="order__bar-title">Счёт</p>
+                <input class="order__bar-input" type="text" class="order__bar-input">
+              </div>
+              <div class="order__bar-item">
+                <p class="order__bar-title">Дата</p>
+                <input class="order__bar-input" type="text" class="order__bar-input">
+              </div>
+              <div class="order__bar-item">
+                <p class="order__bar-title">Каталог</p>
+                <input class="order__bar-input" type="text" class="order__bar-input">
+              </div>
+              <div class="order__bar-item">
+                <p class="order__bar-title">№ заказа</p>
+                <input class="order__bar-input order__bar-input--long" type="text" class="order__bar-input">
+              </div>
+              <div class="order__bar-item">
+                <p class="order__bar-title">Описание</p>
+                <input class="order__bar-input order__bar-input--long" type="text" class="order__bar-input">
+              </div>
+              <div class="order__bar-item">
+                <p class="order__bar-title">З/В</p>
+                <img class="order__bar-img" src="images/order/arrow-up.svg" alt="стрелки переключатели">
+                <img class="order__bar-img" src="images/order/arrow-down.svg" alt="стрелки переключатели">
+              </div>
+              <div class="order__bar-item">
+                <p class="order__bar-title">Цена</p>
+                <img class="order__bar-img" src="images/order/arrow-up.svg" alt="стрелки переключатели">
+                <img class="order__bar-img" src="images/order/arrow-down.svg" alt="стрелки переключатели">
+              </div>
+              <div class="order__bar-item">
+                <p class="order__bar-title">Сумма</p>
+                <img class="order__bar-img" src="images/order/arrow-up.svg" alt="стрелки переключатели">
+                <img class="order__bar-img" src="images/order/arrow-down.svg" alt="стрелки переключатели">
+              </div>
+              <div class="order__bar-item">
+                <p class="order__bar-title">Информация</p>
+              </div>
+              <div class="order__bar-item">
+                <p class="order__bar-title">Статус</p>
+                <select class="order__bar-select">
+                  <option class="order__bar-option" value="">транзит</option>
+                  <option class="order__bar-option" value="">уже на складе</option>
+                </select>
+              </div>
+              <div class="order__bar-item">
+                <p class="order__bar-title">Доставка</p>
+                <img class="order__bar-img" src="images/order/arrow-up.svg" alt="стрелки переключатели">
+                <img class="order__bar-img" src="images/order/arrow-down.svg" alt="стрелки переключатели">
+              </div>
+            </div>
+            <div class="order__list">
+              <div class="order__list-item">
+                <div class="order__item">
+                  <p class="order__item-check">41071465</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-data">18.06.2020</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-catalog">Автозаказ</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-numorder">312212121215465456</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-info">Двери тп...</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-zv">1/0</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-price">1000р.</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-sum">1000р.</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-information">Какая-то инфа...</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-status">Транзит...</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-delivery">29.11.2021</p>
+                </div>
+                <div class="order__item">
+                  <input class="order__item-btn" type="button" value="Отмена">
+                </div>
+              </div>
+              <div class="order__list-item">
+                <div class="order__item">
+                  <p class="order__item-check">41071465</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-data">18.06.2020</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-catalog">Автозаказ</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-numorder">312212121215465456</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-info">Двери тп...</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-zv">1/0</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-price">1000р.</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-sum">1000р.</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-information">Какая-то инфа...</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-status">Транзит...</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-delivery">29.11.2021</p>
+                </div>
+                <div class="order__item">
+                  <input class="order__item-btn" type="button" value="Отмена">
+                </div>
+              </div>
+              <div class="order__list-item">
+                <div class="order__item">
+                  <p class="order__item-check">41071465</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-data">18.06.2020</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-catalog">Автозаказ</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-numorder">312212121215465456</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-info">Двери тп...</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-zv">1/0</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-price">1000р.</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-sum">1000р.</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-information">Какая-то инфа...</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-status">Транзит...</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-delivery">29.11.2021</p>
+                </div>
+                <div class="order__item">
+                  <input class="order__item-btn" type="button" value="Отмена">
+                </div>
+              </div>
+              <div class="order__list-item">
+                <div class="order__item">
+                  <p class="order__item-check">41071465</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-data">18.06.2020</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-catalog">Автозаказ</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-numorder">312212121215465456</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-info">Двери тп...</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-zv">1/0</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-price">1000р.</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-sum">1000р.</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-information">Какая-то инфа...</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-status">Транзит...</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-delivery">29.11.2021</p>
+                </div>
+                <div class="order__item">
+                  <input class="order__item-btn" type="button" value="Отмена">
+                </div>
+              </div>
+              <div class="order__list-item">
+                <div class="order__item">
+                  <p class="order__item-check">41071465</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-data">18.06.2020</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-catalog">Автозаказ</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-numorder">312212121215465456</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-info">Двери тп...</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-zv">1/0</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-price">1000р.</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-sum">1000р.</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-information">Какая-то инфа...</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-status">Транзит...</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-delivery">29.11.2021</p>
+                </div>
+                <div class="order__item">
+                  <input class="order__item-btn" type="button" value="Отмена">
+                </div>
+              </div>
+              <div class="order__list-item">
+                <div class="order__item">
+                  <p class="order__item-check">41071465</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-data">18.06.2020</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-catalog">Автозаказ</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-numorder">312212121215465456</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-info">Двери тп...</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-zv">1/0</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-price">1000р.</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-sum">1000р.</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-information">Какая-то инфа...</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-status">Транзит...</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-delivery">29.11.2021</p>
+                </div>
+                <div class="order__item">
+                  <input class="order__item-btn" type="button" value="Отмена">
+                </div>
+              </div>
+              <div class="order__list-item">
+                <div class="order__item">
+                  <p class="order__item-check">41071465</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-data">18.06.2020</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-catalog">Автозаказ</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-numorder">312212121215465456</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-info">Двери тп...</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-zv">1/0</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-price">1000р.</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-sum">1000р.</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-information">Какая-то инфа...</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-status">Транзит...</p>
+                </div>
+                <div class="order__item">
+                  <p class="order__item-delivery">29.11.2021</p>
+                </div>
+                <div class="order__item">
+                  <input class="order__item-btn" type="button" value="Отмена">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="category__pagination order__pagination">
+            <a class="category__pagination-link category__pagination-link--active" href="#">1</a>
+            <a class="category__pagination-link" href="#">2</a>
+            <a class="category__pagination-link" href="#">3</a>
+            <a class="category__pagination-link" href="#">...</a>
+            <a class="category__pagination-link" href="#">15</a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__item">
+            <a class="footer__logo-link" href="#">
+              <img src="images/header/logo.png" alt="logo">
+            </a>
+            <p class="footer__copy">2020 © Mannex Все права защищены</p>
+            <a class="footer__link" href="#">Публичная оферта</a>
+          </div>
+          <div class="footer__item">
+            <h6 class="footer__title">Основное</h6>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__link" href="index.html">Главная</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="index.html">О компании</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="request.html">Pro-Запрос</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="garag-into.html">Гараж</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="contacts.html">Контакты</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="#">Заказы</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h6 class="footer__title">Аккаунт</h6>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__link" href="basket-empty.html">Корзина</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="balance.html">Баланс</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="order.html">Мои заказы</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="request.html">Запрос продавцу </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link" href="garag-list.html">Cравнение</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h6 class="footer__title">Контакты</h6>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__link footer__link-mail" href="mailto:vladk7072@gmail.com">vladk7072@gmail.com
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__link footer__link-tel" href="tel:0970123456">
+                  097 012 34 56
+                </a>
+                <a class="footer__link footer__link-tel" href="tel:0970123456">
+                  097 012 34 56
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

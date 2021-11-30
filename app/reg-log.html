@@ -14,41 +14,41 @@
   <header class="header">
     <div class="container">
       <div class="header__wrapper">
-        <a class="header__logo-link" href="#">
-          <img src="images/header/logo.png" alt="">
+        <a class="header__logo-link" href="index.html">
+          <img src="images/header/logo.png" alt="логотип">
         </a>
         <nav class="header__menu">
           <ul class="header__list">
             <li class="header__item">
-              <a class="header__link header__link--active" href="index.html">
+              <a class="header__link" href="index.html">
                 Главная
               </a>
             </li>
             <li class="header__item">
-              <a class="header__link" href="#">
+              <a class="header__link" href="request.html">
                 Pro-Запрос
               </a>
             </li>
             <li class="header__item">
-              <a class="header__link" href="#">
+              <a class="header__link" href="garag-into.html">
                 Гараж
               </a>
             </li>
             <li class="header__item">
-              <a class="header__link" href="#">
+              <a class="header__link" href="contacts.html">
                 Контакты
               </a>
             </li>
             <li class="header__item">
-              <a class="header__link" href="#">
+              <a class="header__link" href="order.html">
                 Заказы
               </a>
             </li>
           </ul>
         </nav>
         <div class="header__box">
-          <a class="header__basket header__basket--availability" href="#">100000р.</a>
-          <button class="header__button">Войти</button>
+          <a class="header__basket header__basket--availability" href="basket.html">100000р.</a>
+          <button class="header__button" onclick="location.href='order-into.html'">Войти</button>
         </div>
       </div>
       <form class="header__search" action="#">
@@ -60,9 +60,25 @@
 
   <main class="main">
 
-
-    
-
+    <div class="reg-log">
+      <div class="container">
+        <h2 class="reg-log__title title">
+          Страница регистрации личного кабинета
+        </h2>
+        <form class="reg-log__form" action="#">
+          <div class="reg-log__inputs">
+            <input class="reg-log__input" type="email" placeholder="E-mail">
+            <input class="reg-log__input" type="text" placeholder="Пароль">
+            <input class="reg-log__input" type="text" placeholder="Повтор пароля">
+            <input class="reg-log__input" type="text" placeholder="Фамилия">
+            <input class="reg-log__input" type="text" placeholder="Имя">
+            <input class="reg-log__input" type="text" placeholder="Отчество">
+          </div>
+          <button class="reg-log__button button" type="submit">Зарегистрироваться</button>
+        </form>
+          <p class="request__safe">Нажимая кнопку “Применить” вы примимаете нашу <a class="request__safe-link" href="#">политику конфиденциальности</a></p>
+      </div>
+    </div>
 
   </main>
 
@@ -83,19 +99,19 @@
               <a class="footer__link" href="index.html">Главная</a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__link" href="#">О компании</a>
+              <a class="footer__link" href="index.html">О компании</a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__link" href="#">Pro-Запрос</a>
+              <a class="footer__link" href="request.html">Pro-Запрос</a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__link" href="#">Гараж</a>
+              <a class="footer__link" href="garag-into.html">Гараж</a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__link" href="#">Контакты</a>
+              <a class="footer__link" href="contacts.html">Контакты</a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__link" href="#">Заказы</a>
+              <a class="footer__link" href="order.html">Заказы</a>
             </li>
           </ul>
         </div>
@@ -103,19 +119,19 @@
           <h6 class="footer__title">Аккаунт</h6>
           <ul class="footer__list">
             <li class="footer__list-item">
-              <a class="footer__link" href="#">Корзина</a>
+              <a class="footer__link" href="basket-empty.html">Корзина</a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__link" href="#">Баланс</a>
+              <a class="footer__link" href="balance.html">Баланс</a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__link" href="#">Мои заказы</a>
+              <a class="footer__link" href="order.html">Мои заказы</a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__link" href="#">Запрос продавцу </a>
+              <a class="footer__link" href="request.html">Запрос продавцу </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__link" href="#">Cравнение</a>
+              <a class="footer__link" href="garag-list.html">Cравнение</a>
             </li>
           </ul>
         </div>
@@ -127,11 +143,11 @@
               </a>
             </li>
             <li class="footer__list-item">
-              <a class="footer__link footer__link-tel" href="tel:89002038083">
-                8 900 203 8083
+              <a class="footer__link footer__link-tel" href="tel:0970123456">
+                097 012 34 56
               </a>
-              <a class="footer__link footer__link-tel" href="tel:89122945345">
-                8 912 294 5345
+              <a class="footer__link footer__link-tel" href="tel:0970123456">
+                097 012 34 56
               </a>
             </li>
           </ul>
