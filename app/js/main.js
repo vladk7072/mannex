@@ -1,4 +1,10 @@
 $(function () {
+
+  $(".header__burger-btn").on("click", function(){
+    $(".header__menu").toggleClass("header__menu--active");
+    $(".header__burger-btn").toggleClass("header__burger-btn--active");
+  });
+
   const swiperTop = new Swiper(".top__content", {
     slidesPerView: 1,
     slidesPerGroup: 1,

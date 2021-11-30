@@ -16,7 +16,7 @@
       <div class="container">
         <div class="header__wrapper">
           <a class="header__logo-link" href="#">
-            <img src="images/header/logo.png" alt="логотип">
+            <img class="header__logo-img" src="images/header/logo.png" alt="логотип">
           </a>
           <nav class="header__menu">
             <ul class="header__list">
@@ -47,6 +47,7 @@
               </li>
             </ul>
           </nav>
+          <button class="header__burger-btn"><span></span></button>
           <div class="header__box">
             <a class="header__basket header__basket--availability" href="basket.html">100000р.</a>
             <button class="header__button" onclick="location.href='order-into.html'">Войти</button>
@@ -60,7 +61,7 @@
     </header>
 
     <main class="main">
-
+      
       <section class="top">
         <div class="container">
           <div class="top__rot">
@@ -69,7 +70,7 @@
                 Предлагаем только качественные <span>запчасти</span> для иномарок
               </h1>
               <div class="top__box">
-                <a class="top__link" href="#">Посмотреть каталог</a>
+                <a class="top__link scrollto" href="#category">Посмотреть каталог</a>
                 <p class="top__text">Более 50 товаров</p>
               </div>
             </div>
@@ -118,6 +119,7 @@
         </div>
       </section>
 
+      
       <section class="about" id="about">
         <div class="container">
           <h2 class="about__title title">О компании</h2>
@@ -140,18 +142,16 @@
               </p>
               <a class="about__link" href="#">Читать дальше</a>
             </div>
-            <div class="about__image">
-              <img src="images/about/1.jpg" alt="image">
-            </div>
+              <img class="about__img" src="images/about/1.jpg" alt="image">
           </div>
         </div>
       </section>
 
-      <section class="category">
+      <section class="category" id="category">
         <div class="container">
           <h2 class="category__title title">Каталог</h2>
-          <h2 class="category__title-bg title-bg2"></h2>
-          <div class="category__bar">
+          <h2 class="category__title-bg title-bg"></h2>
+          <!-- <div class="category__bar">
             <div class="category__bar-item category__bar-item--active" data-filter="all">Шини</div>
             <div class="category__bar-item" data-filter=".category-a">Диски</div>
             <div class="category__bar-item" data-filter=".category-b">Аксессуары</div>
@@ -160,8 +160,8 @@
             <div class="category__bar-item" data-filter=".category-e">Аккумуляторы</div>
             <div class="category__bar-item" data-filter=".category-f">Колпаки</div>
             <div class="category__bar-item" data-filter=".category-g">Болты, гайки</div>
-          </div>
-          <div class="category__columns">
+          </div> -->
+          <!-- <div class="category__columns">
             <aside class="category__aside">
               <h6 class="category__aside-title">Тип</h6>
               <select class="category__aside-select">
@@ -535,7 +535,7 @@
                 <a class="category__pagination-link" href="#">15</a>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
 
@@ -612,6 +612,7 @@
             </ul>
           </div>
         </div>
+        <a class="footer__author" href="http://kravchenkoportfolio.ffox.site"><span>developed by</span>Vladislav Kravchenko</a>
       </div>
     </footer>
   </div>

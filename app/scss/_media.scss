@@ -1,0 +1,348 @@
+@media (max-width: 1730px) {
+  .top {
+    &::before {
+      top: -80px;
+    }
+  }
+}
+@media (max-width: 1440px) {
+  .title-bg {
+    font-size: 145px;
+    line-height: 230px;
+  }
+}
+@media (max-width: 1225px) {
+  .header {
+    position: relative;
+    &__menu {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      max-width: 300px;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      background-color: #fff;
+      z-index: 10;
+      transform: translateX(-300px);
+      transition: all 0.3s;
+      opacity: 0;
+      box-shadow: 6px -10px 25px 3px rgba(#000, 0.4);
+    }
+    &__link--active {
+      background-color: transparent;
+      color: $accent;
+    }
+    &__menu--active.header__menu {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    &__list {
+      flex-direction: column;
+      margin: 26px auto;
+    }
+    &__item + .header__item {
+      margin-top: 20px;
+    }
+    &__link {
+      padding: 0;
+      &:hover {
+        background-color: transparent;
+        color: $accent;
+      }
+    }
+    &__burger-btn {
+      display: block;
+      margin-left: auto;
+    }
+    &__burger-btn.header__burger-btn--active {
+      &::before {
+        top: 11px;
+        transform: rotate(45deg);
+      }
+      &::after {
+        bottom: 11px;
+        transform: rotate(-45deg);
+      }
+      span {
+        transform: translateX(-320px);
+        opacity: 0;
+      }
+    }
+  }
+  .top {
+    &__rot {
+      flex-direction: column;
+    }
+    &__title-box {
+      margin-bottom: 20px;
+    }
+    &__title {
+      font-size: 56px;
+      line-height: 60px;
+      margin-bottom: 30px;
+    }
+    &__link {
+      padding: 15px 40px;
+      font-size: 21px;
+    }
+    &__text {
+      font-size: 21px;
+    }
+    &__content {
+      max-width: 400px;
+      width: 100%;
+    }
+    &__btns {
+      bottom: 40px;
+    }
+    &__pagination {
+      bottom: 40px;
+    }
+    &__benefits-item {
+      font-size: 23px;
+      line-height: 28px;
+      padding: 25px 10px;
+    }
+  }
+}
+@media (max-width: 960px) {
+  .top {
+    &::before {
+      display: none;
+    }
+  }
+  .about {
+    &__text {
+      font-size: 21px;
+      line-height: 26px;
+    }
+    &__text + .about__text {
+      margin-top: 15px;
+    }
+    &__link {
+      padding: 20px 15px;
+      font-size: 21px;
+      line-height: 24px;
+    }
+  }
+  .footer {
+    &__title {
+      margin-bottom: 20px;
+    }
+    &__list-item + .footer__list-item {
+      margin-top: 15px;
+    }
+  }
+}
+@media (max-width: 855px) {
+  .title-bg {
+    font-size: 90px;
+    line-height: 190px;
+  }
+  .title {
+    font-size: 44px;
+    line-height: 115px;
+  }
+  .top {
+    padding-bottom: 40px;
+  }
+  .about {
+    &__content {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &__img {
+      margin: 35px auto;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    &__wrapper {
+      grid-template-columns: repeat(2, minmax(auto, 330px));
+      grid-gap: 25px;
+    }
+    &__item:nth-child(2) {
+      margin: 0;
+    }
+    &__item:nth-child(3) {
+      order: 1;
+      margin: 0;
+    }
+  }
+}
+@media (max-width: 696px) {
+  .header {
+    &__wrapper {
+      flex-direction: column;
+    }
+    &__burger-btn {
+      margin: 0 auto 0 0;
+      order: -1;
+    }
+    &__logo-link {
+      margin-top: -25px;
+    }
+    &__box {
+      margin-top: 20px;
+    }
+    &__search {
+      margin-top: 30px;
+      max-width: 338px;
+      margin: 30px auto 0;
+    }
+  }
+  .top {
+    &__title {
+      font-size: 45px;
+      line-height: 45px;
+      margin-bottom: 20px;
+    }
+    &__rot {
+      margin-bottom: 30px;
+    }
+    &__benefits-item {
+      padding: 5px 10px;
+    }
+  }
+}
+@media (max-width: 560px) {
+  .title-bg {
+    font-size: 60px;
+    line-height: 100px;
+  }
+  .title {
+    font-size: 35px;
+    transform: translateY(-47px);
+  }
+  .top {
+    &__benefits {
+      grid-gap: 8px;
+    }
+    &__benefits-item {
+      font-size: 18px;
+      line-height: 18px;
+    }
+    &__link {
+      margin-right: 10px;
+      padding: 10px 15px;
+      font-size: 15px;
+    }
+    &__text {
+      font-size: 17px;
+      line-height: 23px;
+    }
+  }
+  .about {
+    &__link {
+      max-width: 100%;
+      font-size: 18px;
+    }
+    &__text {
+      font-size: 17px;
+      line-height: 24px;
+    }
+    &__text + .about__text {
+      margin-top: 10px;
+    }
+  }
+}
+@media (max-width: 425px) {
+  .header {
+    &__search-text {
+      padding: 10px 25px;
+    }
+    &__search-btn {
+      font-size: 16px;
+      padding: 6px 22px;
+    }
+  }
+  .about {
+    &__link {
+      font-size: 16px;
+    }
+  }
+  .footer {
+    padding-bottom: 100px;
+    &__wrapper {
+      grid-template-columns: repeat(1, minmax(auto, 320px));
+      justify-content: center;
+    }
+    &__item {
+      margin: 0;
+    }
+  }
+}
+@media (max-width: 390px) {
+  .top {
+    &__benefits {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__benefits-item:nth-child(3) {
+      grid-column: span 2;
+      line-height: 36px;
+    }
+  }
+}
+@media (max-width: 375px) {
+  .title{
+    font-size: 30px;
+  }
+  .title-bg{
+    font-size: 45px;
+  }
+  .header {
+    &__logo-link {
+      max-width: 200px;
+    }
+    &__basket {
+      margin-right: 10px;
+      font-size: 16px;
+    }
+    &__button {
+      padding: 9px 8px 9px 95px;
+    }
+    &__search {
+      max-width: 280px;
+    }
+  }
+  .top {
+    &__box {
+      flex-direction: column;
+    }
+    &__link {
+      margin: 0 0 15px;
+    }
+    &__current {
+      font-size: 40px;
+      line-height: 56px;
+    }
+    &__total {
+      font-size: 32px;
+      line-height: 36px;
+    }
+    &__btns {
+      max-width: 105px;
+    }
+    &__btn-prev {
+      width: 45px;
+      height: 45px;
+    }
+    &__btn-next {
+      width: 45px;
+      height: 45px;
+    }
+  }
+  .about{
+    &__link{
+      padding: 15px 15px;
+    }
+  }
+}
+@media (max-width: 335px) {
+  .header__menu {
+    box-shadow: none;
+    max-width: 100%;
+  }
+}

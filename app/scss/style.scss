@@ -144,6 +144,7 @@
     background-image: url("../images/top/decor.png");
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: cover;
     width: 150px;
     height: 150px;
     top: -20px;
@@ -283,25 +284,31 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
+  &__info{
+    padding-right: 5px;
+  }
   &__text {
     font-size: 24px;
     line-height: 28px;
-    @extend %gil-500;
+    @extend %gil-400;
     & + .about__text {
       margin-top: 25px;
     }
   }
   &__link {
     display: inline-block;
-    padding: 35px 146px;
+    max-width: 460px;
+    width: 100%;
+    padding: 35px 15px;
     border: 1px solid rgba(#000, 0.3);
+    text-align: center;
     margin-top: 30px;
     font-size: 24px;
     line-height: 29px;
     @extend %gil-700;
     color: #000;
   }
-  &__image {
+  &__img{
     align-self: start;
     max-width: 720px;
     width: 100%;
@@ -309,9 +316,6 @@
 }
 .category {
   padding: 100px 0 50px;
-  &__title {
-    margin-bottom: 0;
-  }
   &__bar {
     display: flex;
     justify-content: center;
@@ -584,6 +588,22 @@
       display: none;
     }
   }
+  &__item {
+    margin: 0 auto;
+  }
+  &__author {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 15px;
+    line-height: 21px;
+    @extend %gil-400;
+    color: #434242;
+    span{
+      color: $accent;
+      margin-right: 5px;
+    }
+  }
 }
 .request {
   padding: 50px 0 156px;
@@ -652,7 +672,7 @@
 }
 .basket {
   padding: 50px 0 106px;
-  &__title{
+  &__title {
     margin-bottom: 50px;
   }
   &__list {

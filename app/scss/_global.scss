@@ -15,6 +15,45 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
+.header__burger-btn{
+  display: none;
+  padding: 0;
+  margin-right: 20px;
+  border: none;
+  width: 30px;
+  height: 25px;
+  background-color: transparent;
+  z-index: 10;
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    background-color: $accent;
+    height: 3px;
+    top: 0;
+    right: 0;
+    left: 0;
+    transition: all .3s;
+  }
+  &::after{
+    content: '';
+    position: absolute;
+    background-color: $accent;
+    height: 3px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transition: all .3s;
+  }
+  span{
+    height: 3px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    background-color: $accent;
+    transition: all .2s;
+  }
+}
 .title {
   font-size: 64px;
   line-height: 77px;
@@ -34,13 +73,6 @@ body {
   color: rgba(67, 66, 66, 0.1);
   @extend %gil-700;
   margin-top: -205px;
-}
-.title-bg2 {
-  font-size: 200px;
-  line-height: 242px;
-  color: rgba(67, 66, 66, 0.1);
-  @extend %gil-700;
-  margin-top: -155px;
 }
 .button{
   background-color: $accent;
