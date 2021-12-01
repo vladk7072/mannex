@@ -5,6 +5,11 @@ $(function () {
     $(".header__burger-btn").toggleClass("header__burger-btn--active");
   });
 
+  $(".category__bar-btn").on("click", function(){
+    $(".category__bar").toggleClass("category__bar--active");
+    $(".category__bar-btn").toggleClass("category__bar-btn--active");
+  });
+
   const swiperTop = new Swiper(".top__content", {
     slidesPerView: 1,
     slidesPerGroup: 1,
