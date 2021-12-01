@@ -49,8 +49,68 @@
       margin-right: 20px;
     }
   }
+  .garag-adding {
+    &__wrapper {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  .garag-list {
+    &__list {
+      grid-gap: 15px;
+    }
+  }
+  .login {
+    &__title {
+      max-width: 730px;
+      width: 100%;
+    }
+  }
+  .order {
+    .order__bar-item--info {
+      display: none;
+    }
+    &__bar {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(auto, 300px));
+      align-items: start;
+      grid-gap: 15px;
+    }
+    &__bar-title {
+      font-size: 21px;
+    }
+    &__bar-input {
+      max-width: 90px;
+      font-size: 12px;
+      padding: 5px 10px;
+    }
+    &__bar-select {
+      font-size: 12px;
+      padding: 5px 10px;
+    }
+  }
+  .reg-log{
+    &__title{
+      max-width: 730px;
+      width: 100%;
+    }
+    &__inputs{
+      grid-gap: 20px;
+    }
+  }
 }
 @media (max-width: 1225px) {
+  body.lock{
+    overflow: hidden;
+  }
+  .button-garag {
+    max-width: 390px;
+    padding: 25px 10px;
+    font-size: 21px;
+    &::before {
+      width: 160px;
+      height: 105px;
+    }
+  }
   .header {
     position: relative;
     &__menu {
@@ -61,6 +121,7 @@
       max-width: 300px;
       width: 100%;
       height: 100vh;
+      overflow: auto;
       display: flex;
       background-color: #fff;
       z-index: 10;
@@ -163,11 +224,76 @@
       margin: 5px auto 5px 0;
     }
   }
+  .basket {
+    &__list {
+      grid-gap: 5px;
+    }
+  }
+  .garag-add {
+    &__title {
+      margin-bottom: 0;
+    }
+  }
+  .garag-adding {
+    &__wrapper {
+      grid-template-columns: repeat(2, minmax(auto, 470px));
+      justify-content: center;
+      grid-gap: 10px;
+    }
+    &__input {
+      padding: 25px;
+      font-size: 16px;
+      line-height: 19px;
+    }
+    &__input-dop {
+      display: block;
+      max-width: 950px;
+      width: 100%;
+      margin: 10px auto 0;
+    }
+  }
+  .garag-list {
+    .garag-add__title {
+      margin: 50px 0;
+    }
+    &__item {
+      padding: 15px;
+      min-height: auto;
+    }
+    &__item-title {
+      margin-top: 40px;
+      font-size: 28px;
+      line-height: 34px;
+    }
+    &__item-link {
+      font-size: 19px;
+      line-height: 21px;
+      padding: 17px 10px;
+    }
+  }
+  .request{
+    &__input{
+      padding: 25px;
+    }
+  }
 }
 @media (max-width: 1070px) {
   .category {
     &__items {
       grid-template-columns: repeat(2, minmax(auto, 325px));
+    }
+  }
+  .order{
+    &__list-item{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__item{
+      display: flex;
+      justify-content: center;
+      & + .order__item{
+        margin-top: 15px;
+      }
     }
   }
 }
@@ -191,6 +317,11 @@
       line-height: 24px;
     }
   }
+  .garag-list {
+    &__list {
+      grid-template-columns: repeat(3, minmax(auto, 325px));
+    }
+  }
   .footer {
     &__title {
       margin-bottom: 20px;
@@ -212,6 +343,23 @@
   .button {
     font-size: 17px;
     line-height: 21px;
+  }
+  .button-2 {
+    padding: 20px 10px;
+    max-width: 365px;
+    font-size: 21px;
+    line-height: 24px;
+  }
+  .button-garag {
+    max-width: 330px;
+    padding: 20px 10px;
+    font-size: 19px;
+    &::before {
+      width: 140px;
+      height: 92px;
+      left: -95px;
+      bottom: -32px;
+    }
   }
   .top {
     padding-bottom: 40px;
@@ -263,7 +411,6 @@
       height: 45px;
     }
   }
-
   .balance {
     &__title span {
       font-size: 28px;
@@ -300,6 +447,45 @@
       line-height: 18px;
     }
   }
+  .basket {
+    &__empty {
+      margin-bottom: 65px;
+    }
+    &__empty-img {
+      max-width: 270px;
+    }
+    &__empty-text {
+      font-size: 21px;
+      line-height: 23px;
+      max-width: 420px;
+    }
+  }
+  .login {
+    &__title {
+      max-width: 500px;
+      line-height: 53px;
+    }
+    &__text {
+      max-width: 400px;
+      width: 100%;
+    }
+  }
+  .reg-log{
+    &__title{
+      line-height: 52px;
+    }
+    &__inputs{
+      margin: 80px 0;
+    }
+    &__input{
+      padding: 15px;
+    }
+  }
+  .request{
+    .title{
+      margin-bottom: 0;
+    }
+  }
 }
 @media (max-width: 768px) {
   .category {
@@ -309,6 +495,79 @@
     }
     &__bar-item {
       font-size: 16px;
+    }
+  }
+  .basket {
+    &__list {
+      grid-template-columns: repeat(2, minmax(auto, 285px));
+    }
+  }
+  .basket {
+    &__all-price {
+      font-size: 21px;
+    }
+  }
+  .garag-adding {
+    &__input {
+      padding: 20px 10px;
+    }
+    &__input-label {
+      margin: 35px auto;
+    }
+  }
+  .garag-list {
+    &__list {
+      grid-gap: 10px;
+    }
+    &__item-title {
+      font-size: 25px;
+      line-height: 28px;
+    }
+    &__item-text {
+      font-size: 15px;
+      line-height: 18px;
+    }
+    &__item-link {
+      font-size: 17px;
+      padding: 14px 10px;
+    }
+  }
+  .order {
+    &__bar {
+      grid-template-columns: repeat(5, minmax(auto, 300px));
+      grid-gap: 10px;
+    }
+    &__item{
+      font-size: 13px;
+      & + .order__item{
+        margin-top: 5px;
+      }
+    }
+  }
+  .reg-log{
+    .title{
+      transform: translateY(0);
+      margin-bottom: 0;
+    }
+    &__inputs{
+      grid-template-columns: repeat(2, minmax(auto, 230px));
+      grid-gap: 10px;
+      margin: 60px 0;
+    }
+    &__input{
+      width: 100%;
+      font-size: 15px;
+    }
+  }
+  .request{
+    &__input{
+      padding: 20px;
+      font-size: 16px;
+    }
+    &__box-1,
+    &__box-2{
+      grid-gap: 10px;
+      grid-template-columns: repeat(2, minmax(auto, 470px));
     }
   }
   .footer {
@@ -386,6 +645,30 @@
       grid-template-columns: repeat(2, minmax(auto, 260px));
     }
   }
+  .garag-adding {
+    &__text {
+      margin-top: 5px;
+    }
+  }
+  .order {
+    &__bar {
+      padding: 5px 5px 10px;
+      grid-gap: 5px;
+    }
+    &__bar-title {
+      font-size: 17px;
+    }
+    &__bar-input {
+      max-width: 73px;
+      font-size: 12px;
+      padding: 3px 2px;
+    }
+    &__bar-select {
+      max-width: 73px;
+      font-size: 12px;
+      padding: 3px 2px;
+    }
+  }
 }
 @media (max-width: 560px) {
   .title-bg {
@@ -395,6 +678,23 @@
   .title {
     font-size: 35px;
     transform: translateY(-47px);
+  }
+  .button-2 {
+    padding: 16px 10px;
+    max-width: 250px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .button-garag {
+    margin: 70px auto;
+    max-width: 280px;
+    font-size: 16px;
+    &::before {
+      width: 120px;
+      height: 76px;
+      left: -70px;
+      bottom: -25px;
+    }
   }
   .top {
     &__benefits {
@@ -446,6 +746,86 @@
     &__totals-item {
       font-size: 18px;
       line-height: 21px;
+    }
+  }
+  .basket {
+    .title {
+      transform: translateY(0);
+    }
+    &__empty {
+      margin-bottom: 35px;
+    }
+    &__empty-img {
+      max-width: 200px;
+    }
+    &__empty-text {
+      font-size: 18px;
+      line-height: 21px;
+      max-width: 360px;
+    }
+  }
+  .contacts {
+    &__title {
+      margin-bottom: 0;
+    }
+    &__items {
+      margin-top: 0;
+      max-width: 305px;
+      width: 100%;
+    }
+    &__item-tel {
+      font-size: 16px;
+    }
+    &__item-email {
+      font-size: 16px;
+    }
+  }
+  .garag-adding {
+    .title {
+      transform: translateY(0);
+    }
+    &__wrapper {
+      grid-template-columns: repeat(1, minmax(auto, 340px));
+    }
+    &__input-dop {
+      max-width: 340px;
+    }
+    &__input-label {
+      max-width: 265px;
+    }
+  }
+  .request {
+    padding-bottom: 100px;
+    .title{
+      transform: translateY(0);
+    }
+    &__safe {
+      max-width: 250px;
+    }
+  }
+  .login {
+    &__title {
+      transform: translateY(0);
+    }
+  }
+  .garag-list {
+    .garag-add {
+      &__title {
+        transform: translateY(0);
+      }
+    }
+    &__list {
+      grid-template-columns: repeat(2, minmax(auto, 290px));
+    }
+  }
+  .order{
+    &__title{
+      transform: translateY(0);
+    }
+  }
+  .reg-log{
+    &__title{
+      line-height: 44px;
     }
   }
 }
@@ -522,11 +902,47 @@
       margin-left: 70px;
     }
   }
+  .login {
+    &__title {
+      max-width: 350px;
+      line-height: 38px;
+    }
+    &__input {
+      padding: 20px 25px;
+    }
+  }
+  .order{
+    &__title{
+      margin: 0;
+    }
+    &__bar{
+      grid-template-columns: repeat(4, minmax(auto, 300px));
+    }
+  }
+  .reg-log{
+    &__title{
+      max-width: 350px !important;
+      width: 100%;
+    }
+  }
 }
 @media (max-width: 425px) {
   .button {
     font-size: 14px;
     line-height: 18px;
+  }
+  .button-2 {
+    padding: 13px 10px;
+    max-width: 215px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .button-garag {
+    padding: 18px 10px;
+    &::before {
+      left: -15px;
+      bottom: -35px;
+    }
   }
   .header {
     &__search-text {
@@ -557,7 +973,7 @@
       margin-bottom: 13px;
     }
     &__items {
-      grid-template-columns: repeat(1, minmax(auto, 230px));
+      grid-template-columns: repeat(1, minmax(auto, 250px));
     }
     &__pagination-link {
       font-size: 15px;
@@ -590,6 +1006,53 @@
       line-height: 18px;
       padding: 16px 10px;
       margin: 60px auto 20px;
+    }
+  }
+  .basket {
+    .category__pagination {
+      margin-top: 40px;
+    }
+    &__title {
+      margin-bottom: 0;
+    }
+    &__list {
+      grid-template-columns: repeat(1, minmax(auto, 250px));
+      margin-bottom: 40px;
+    }
+    &__empty-text {
+      font-size: 17px;
+      line-height: 20px;
+      max-width: 270px;
+    }
+    &__all-price {
+      margin-top: 35px;
+      font-size: 16px;
+    }
+  }
+  .contacts {
+    &__items {
+      margin: 0 auto;
+    }
+  }
+  .login {
+    &__input {
+      &::placeholder {
+        font-size: 15px;
+      }
+    }
+  }
+  .request{
+    &__box-1,
+    &__box-2{
+      grid-template-columns: repeat(1, minmax(auto, 470px));
+    }
+    &__subtitle{
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+    &__input{
+      padding: 15px;
+      font-size: 15px;
     }
   }
   .footer {
@@ -684,6 +1147,34 @@
   .about {
     &__link {
       padding: 15px 15px;
+    }
+  }
+  .garag-list {
+    .garag-add__title {
+      margin: 0;
+    }
+    &__item {
+      padding: 10px;
+    }
+    &__item-title {
+      margin-top: 18px;
+      font-size: 21px;
+      line-height: 24px;
+    }
+    &__item-link {
+      font-size: 15px;
+      padding: 9px 2px;
+    }
+  }
+  .order{
+    &__bar{
+      grid-template-columns: repeat(3, minmax(auto, 300px));
+    }
+  }
+  .reg-log{
+    &__title{
+      max-width: 300px !important;
+      width: 100%;
     }
   }
 }

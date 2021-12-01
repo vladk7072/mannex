@@ -3,11 +3,17 @@ $(function () {
   $(".header__burger-btn").on("click", function(){
     $(".header__menu").toggleClass("header__menu--active");
     $(".header__burger-btn").toggleClass("header__burger-btn--active");
+    $("body").toggleClass("lock");
   });
 
   $(".category__bar-btn").on("click", function(){
     $(".category__bar").toggleClass("category__bar--active");
     $(".category__bar-btn").toggleClass("category__bar-btn--active");
+  });
+
+  $(".category__bar-item").on("click", function(){
+    $(".category__bar").removeClass("category__bar--active");
+    $(".category__bar-btn").removeClass("category__bar-btn--active");
   });
 
   const swiperTop = new Swiper(".top__content", {

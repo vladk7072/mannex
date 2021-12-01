@@ -106,6 +106,16 @@
     justify-content: center;
     align-items: center;
   }
+  &__search-btn {
+    padding: 13px 49px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    @extend %gil-500;
+    background-color: $accent;
+    border: none;
+    margin-left: -1px;
+  }
   &__search-text {
     max-width: 520px;
     width: 100%;
@@ -114,7 +124,6 @@
     border-right: none;
     padding: 17px 40px;
     font-size: 12px;
-    line-height: 14px;
     @extend %gil-400;
     color: #a6a6a6;
     text-transform: uppercase;
@@ -124,15 +133,6 @@
     &:focus {
       outline: none;
     }
-  }
-  &__search-btn {
-    padding: 13px 49px;
-    font-size: 20px;
-    line-height: 24px;
-    color: #fff;
-    @extend %gil-500;
-    background-color: $accent;
-    border: none;
   }
 }
 .top {
@@ -726,7 +726,7 @@
   }
   &__list {
     display: grid;
-    grid-template-columns: repeat(3, 325px);
+    grid-template-columns: repeat(3, minmax(auto, 325px));
     grid-gap: 40px;
     justify-content: center;
     margin-bottom: 80px;
@@ -776,20 +776,6 @@
     margin-top: 32px;
     max-width: 500px;
     width: 100%;
-    text-align: center;
-  }
-  &__empty-btn {
-    display: block;
-    margin: 0 auto;
-    padding: 35px 10px;
-    max-width: 470px;
-    width: 100%;
-    background: linear-gradient(180deg, #ff5454 0%, #cd4848 100%);
-    box-shadow: 0px 20px 50px rgba(255, 129, 129, 0.3);
-    font-size: 24px;
-    line-height: 29px;
-    @extend %gil-700;
-    color: #fff;
     text-align: center;
   }
 }
@@ -1132,6 +1118,9 @@
     line-height: 18px;
     @extend %mon-400;
     position: relative;
+    &::placeholder{
+      text-align: center;
+    }
     &:focus {
       outline: none;
     }
@@ -1148,6 +1137,9 @@
     line-height: 18px;
     @extend %mon-400;
     padding: 7px 15px;
+    &:focus{
+      outline: none;
+    }
   }
 
   &__list-item {
